@@ -1,4 +1,4 @@
-package com.superbeyone.code;
+package com.superbeyone.design;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

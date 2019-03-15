@@ -1,4 +1,4 @@
-package com.superbeyone.code;
+package com.superbeyone.design;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
