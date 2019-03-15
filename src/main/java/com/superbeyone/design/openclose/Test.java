@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
  * @author Mr.superbeyone
  * @project design-pattern
  * @className Test
- * @description
+ * @description 开闭原则
  * @date 2019-03-15 16:06
  **/
 
