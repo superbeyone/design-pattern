@@ -11,8 +11,8 @@ package com.superbeyone.design;
 public class GreatestDivisor {
 
     private static int getGreatestCommonDivisor(int a, int b) {
-        int big = a > b ? a : b;
-        int small = a > b ? b : a;
+        int big = Math.max(a, b);
+        int small = Math.min(a, b);
 
         if (big % small == 0) {
             return small;
@@ -31,19 +31,22 @@ public class GreatestDivisor {
     /**
      * 更相减损术 （九章算术）
      *
-     * @param a
-     * @param b
-     * @return
+     * @param a a
+     * @param b b
+     * @return 最大公约数
      */
     private static int getGreatestCommonDivisorV2(int a, int b) {
         if (a == b) {
             return a;
         }
-        int big = a > b ? a : b;
-        int small = a > b ? b : a;
+        int big = Math.max(a, b);
+        int small = Math.min(a, b);
         return getGreatestCommonDivisorV2(big - small, small);
     }
 
+    /**
+     * 更相减损术 + 移位
+     */
     private static int gcd(int a, int b) {
         if (a == b) {
             return a;
@@ -56,8 +59,8 @@ public class GreatestDivisor {
         } else if ((a & 1) != 0 && (b & 1) == 0) {
             return gcd(a, b >> 1);
         } else {
-            int big = a > b ? a : b;
-            int small = a > b ? b : a;
+            int big = Math.max(a, b);
+            int small = Math.min(a, b);
             return gcd(big - small, small);
         }
     }
