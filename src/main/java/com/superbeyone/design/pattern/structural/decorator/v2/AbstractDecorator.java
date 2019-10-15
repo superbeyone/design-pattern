@@ -1,4 +1,4 @@
-package com.superbeyone.design.pattern.creational.decorator.v2;
+package com.superbeyone.design.pattern.structural.decorator.v2;
 
 /**
  * @author Mr.superbeyone
